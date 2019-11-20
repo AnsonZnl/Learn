@@ -1,2 +1,2 @@
 # Learn
-学习笔记
+JavaScript系列
