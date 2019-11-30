@@ -8,7 +8,7 @@
         <label>课程名称</label><input type="text" v-model="courseInfo.courseName">
       </div>
       <div>
-        <label>课程价格</label><input type="text" v-model="courseInfo.coursePrice"></div>
+        <label>课程价格</label><input type="number" v-model="courseInfo.coursePrice"></div>
       <div><button @click="addCourseBtn">添加到课程列表</button></div>
     </div>
 
@@ -76,6 +76,8 @@
           ...item,
           id: len
         });
+        this.courseInfo.courseName ='';
+        this.courseInfo.coursePrice ='';
       },
       addShopCart(i) { //添加到购物车
         console.log(i)
